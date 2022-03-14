@@ -1,0 +1,216 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+#bannerid{
+    width:100%;
+    height: 100vh;
+    background-image: linear-gradient( rgba(0,0,0,0.75),rgba(0,0,0,0.75)), url(abtbg.jpg);
+    background-size: cover;
+    background-position: center;
+}
+#headid{
+    color: white;
+    margin-right: 650px;
+}
+.navbar
+{
+    width: 100%;
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #000;
+}
+.logo
+{
+    width: 120px;
+    cursor: pointer;
+}
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    font-weight: bold;
+   text-transform: uppercase;
+}
+.active{
+    background-color: #009688;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  border-radius: 25px;
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+  }
+.sub-menu-1{
+    display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 100px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}  
+.sub-menu-1 a{
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block; 
+}
+.sub-menu-1 li:hover{
+    background-color: #009688;
+}
+.dropdown:hover .sub-menu-1{
+    display: block;
+}
+.dropdown:hover.active{
+    background-color: #fff;
+}
+#navid
+{
+    background-color: #000;
+}
+#navid ul li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #009688;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+.navbar ul li:hover::after{
+    width: 100%;
+}
+#abttxt{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: white;
+}
+#abttxt h1{
+    font-size: 70px;
+    margin-top: 80px;
+}
+#abttxt p{
+    margin: 20px 250px;
+    font-weight: 100;
+    line-height: 25px;
+}
+button{
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid #009688;
+    background: transparent;
+    color: #fff;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+span{
+    background:#009688 ;
+    height: 100%;
+    width: 100%;
+    border-radius: 35px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 00.5s;
+}
+button:hover span{
+    width: 100%;
+}
+button:hover{
+   background-color: #000;
+
+}
+.active.navbar ul li{
+    background: #009688;
+    border-radius: 3px;
+    
+}
+
+
+
+
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+  }
+  
+  html {
+    box-sizing: border-box;
+  }
+  
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+  
+  .column {
+    float: left;
+    width: 33.3%;
+    margin-bottom: 16px;
+    padding: 0 8px;
+  }
+  
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    margin: 10px;
+  }
+  
+  .about-section {
+    padding: 50px;
+    text-align: center;
+    background-color: #474e5d;
+    color: white;
+  }
+  
+  .container {
+    padding: 0 16px;
+  }
+  
+  .container::after, .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  .title {
+    color: grey;
+  }
+  
+  .button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  .button:hover {
+    background-color: #555;
+  }
+  
+  @media screen and (max-width: 650px) {
+    .column {
+      width: 100%;
+      display: block;
+    }
+  }
